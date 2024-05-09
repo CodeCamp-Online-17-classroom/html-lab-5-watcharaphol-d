@@ -1,2 +1,68 @@
+<!-- ============= HOMEWORK ORDER ============ -->
 <!-- link: https://en.wikipedia.org/wiki/HTML -->
 <!-- image: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png -->
+<!-- ========================================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture and Link</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .content {
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            width: 400px;
+            height: 400px;
+            /* --- center container ---*/
+            margin: 0px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            /* --- center content ---*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* --- Background---*/
+            background-image: linear-gradient(180deg, rgb(246, 142, 130), rgb(88, 255, 255));
+            box-shadow: 0 0 5px 2px lightgoldenrodyellow;
+            transition: box-shadow 0.2s;
+        }
+
+        .content:hover {
+            box-shadow: 0 0 20px 5px #0a3044;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: overline;
+            color: black;
+        }
+
+        .button {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <a href="https://en.wikipedia.org/wiki/HTML">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/120px-HTML5_logo_and_wordmark.svg.png"
+                alt="HTML5-logo" class="button">
+            <h1>CLICK HERE</h1>
+        </a>
+    </div>
+</body>
+
+</html>
